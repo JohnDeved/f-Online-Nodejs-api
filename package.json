@@ -15,5 +15,11 @@
     "serve-favicon": "~2.3.2",
     "request": "*",
     "colors": "*"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/**",
+      "public/js/min/**"
+    ]
   }
 }
