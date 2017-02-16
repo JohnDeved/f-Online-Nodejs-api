@@ -1,0 +1,14 @@
+.content-container {
+  margin-top: 150px;
+  background: white;
+  padding: 25px;
+}
+
+.infocard.pmd-card {
+  margin-bottom: 0 !important;
+}
+
+.button-container.btn {
+  display: inline-flex;
+  vertical-align: middle;
+}

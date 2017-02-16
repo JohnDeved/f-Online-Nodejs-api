@@ -11,8 +11,8 @@
   <!-- Bootstrap css-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!--Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Icon Font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <!-- Propeller css -->
   <link href="css/propeller.min.css" rel="stylesheet">
@@ -22,36 +22,47 @@
 </head>
 
 <body>
-  <div class="row infocard vertical-center">
-    <div class="col-md-6 col-md-offset-3">
-      <div class="pmd-card pmd-table-card-responsive pmd-z-depth-1">
-        <div class="pmd-table-card">
-          <table class="table pmd-table table-hover">
-            <thead>
-              <tr>
-                <th width="40%">Link</th>
-                <th width="60%">Return</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-title="Link"><code>.pmd-list</code></td>
-                <td data-title="Return">Add this class for all the list items.</td>
-              </tr>
-              <tr>
-                <td data-title="Link"><code>.pmd-card-list</code></td>
-                <td data-title="Return">Class to be added to the list for formatting purpose.</td>
-              </tr>
-              <tr>
-                <td data-title="Link"><code>.pmd-list-icon</code></td>
-                <td data-title="Return">Add this class when your list contains icons.</td>
-              </tr>
-              <tr>
-                <td data-title="Link"><code>.pmd-list-avatar</code></td>
-                <td data-title="Return">Add this class when your list contains profile pic.</td>
-              </tr>
-            </tbody>
-          </table>
+  <div class="row-container row">
+    <div class="content-container col-md-6 col-md-offset-3 pmd-z-depth-1">
+      <div class="infocard">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="pmd-card pmd-table-card-responsive">
+            <div class="pmd-table-card">
+              <table class="table pmd-table table-hover">
+                <thead>
+                  <tr>
+                    <th width="40%">Link</th>
+                    <th width="60%">Return</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Link"><code>/api</code></td>
+                    <td data-title="Return">Alle Fragen</td>
+                  </tr>
+                  <tr>
+                    <td data-title="Link"><code>/api/<i>1</i>/</code></td>
+                    <td data-title="Return">Einzel Frage</td>
+                  </tr>
+                  <tr>
+                    <td data-title="Link"><code>/api/<i>2</i>/<i>5</i></code></td>
+                    <td data-title="Return">Fragen Bereich</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row button-container">
+        <div class="col-md-10 col-md-offset-1">
+          <a href="https://github.com/JohnDeved/f-Online-Nodejs-api">
+            <button type="button" class="btn pmd-ripple-effect pmd-btn-raised btn-primary"><i class="fa fa-github" aria-hidden="true"></i> Github </button >
+          </a>
+          <a href="https://github.com/JohnDeved/f-Online-Nodejs-api/archive/master.zip">
+            <button type="button" class="btn pmd-ripple-effect pmd-btn-raised btn-info"><i class="fa fa-download" aria-hidden="true"></i> Download </button >
+          </a>
         </div>
       </div>
     </div>
