@@ -42,14 +42,17 @@ router.get('/:firstId?/:secondId?', function (req, res, next) {
         return req.render('index')
       }
 
-      console.log('user wird ausgeloggt...'.yellow)
+      // json an client schicken
+      res.json(JSON.stringify(question))
+
+      console.log('Daten erfolgreich erhalten, User wird wieder ausgeloggt...'.yellow)
       // Ausloggen Body bereit machen
       let logoutInfo = new fo.LogoutBody()
       // Login cookie in header einfügen
       logoutInfo.headers.Cookie = loginData.cookie
       // mit Body Ausloggen
       fo.logout(logoutInfo, () => {
-        res.json(JSON.stringify(question))
+
       })
     })
   })
