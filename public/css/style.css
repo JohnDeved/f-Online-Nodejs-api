@@ -4,10 +4,14 @@
   padding: 25px;
 }
 
-.infocard.pmd-card {
-  margin-bottom: 0 !important;
-}
-
 .row-container {
     margin: 0;
+}
+
+code {
+  cursor: text !important;
+}
+
+edit {
+  color: blue;
 }
