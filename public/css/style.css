@@ -1,7 +1,17 @@
+.card-top {
+  background: #4285f4;
+  margin-top: 10%;
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: solid 0px;
+}
+
 .content-container {
-  margin-top: 150px;
   background: white;
   padding: 25px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .row-container {
@@ -14,4 +24,9 @@ code {
 
 edit {
   color: blue;
+}
+
+.text-white {
+  color: white;
+  margin: 15px;
 }

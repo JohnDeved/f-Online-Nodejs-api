@@ -53,7 +53,6 @@ router.get('/:firstId?/:secondId?', function (req, res, next) {
       logoutInfo.headers.Cookie = loginData.cookie
       // mit Body Ausloggen
       fo.logout(logoutInfo, () => {
-
       })
     })
   })
