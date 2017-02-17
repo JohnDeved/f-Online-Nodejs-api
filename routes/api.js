@@ -22,7 +22,7 @@ router.get('/:firstId?/:secondId?', function (req, res, next) {
       for (var i = start; i < end; i++) {
         questionCount.push(i.toString())
       }
-    } else if (req.params.firstId !== undefined && req.params.secondId === undefined) {
+    } else if (req.params.firstId !== undefined) {
       let id = parseInt(req.params.firstId) || 0
       questionCount.push(id.toString())
     } else {
