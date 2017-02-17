@@ -8,7 +8,6 @@
   margin-bottom: 0 !important;
 }
 
-.button-container.btn {
-  display: inline-flex;
-  vertical-align: middle;
+.row-container {
+    margin: 0;
 }
