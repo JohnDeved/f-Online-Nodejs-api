@@ -14,14 +14,13 @@ class FOnline {
           let question = JSON.parse(body)
           if (question[0] === undefined) {
             question.msg && console.error('F-Online:', question.msg.yellow)
-            callback && callback(void 0)
-            return void 0
+            callback && callback(question)
+            return question
           }
           callback && callback(question)
           return question
         } catch (error) {
           console.log('ERROR:'.red, 'Fehler beim JSON parsen aufgetreten...')
-                    // return this.getQuestion(reqbody, callback)
         }
       })
     }
@@ -52,9 +51,9 @@ class FOnline {
 
     this.LoginBody = class {
       constructor () {
-                // Post URL
+        // Post URL
         this.url = 'http://78.47.249.57/json/login'
-                // Login Daten als Body
+        // Login Daten als Body
         this.body = JSON.stringify({
           'username': config.username,
           'password': config.password,
@@ -67,35 +66,35 @@ class FOnline {
           'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
         }
       }
-        }
+    }
 
     this.LogoutBody = class {
       constructor () {
-                // Get URL
+        // Get URL
         this.url = 'http://78.47.249.57/json/logout'
-                // Cookie mit SessionId wird benötigt
+        // Cookie mit SessionId wird benötigt
         this.headers = {
           'User-Agent': 'F-Online non-scraping Nodejs Api',
           'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
           'Cookie': config.cookieBase + 'placeholderid' // SessionID
         }
       }
-        }
+    }
 
     this.GetQuestionBody = class {
       constructor () {
-                // Post URL
+        // Post URL
         this.url = 'http://78.47.249.57/json/questions'
-                // Fragen Ids als Stringarray im Body
+        // Fragen Ids als Stringarray im Body
         this.body = JSON.stringify(['1'])
-                // Cookie mit SessionId wird benötigt
+        // Cookie mit SessionId wird benötigt
         this.headers = {
           'User-Agent': 'F-Online non-scraping Nodejs Api',
           'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
           'Cookie': config.cookieBase + 'placeholderid' // SessionID
         }
       }
-        }
+    }
   }
 }
 
