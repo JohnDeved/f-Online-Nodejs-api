@@ -44,7 +44,7 @@ router.get('/:firstId?/:secondId?', function (req, res, next) {
       }
 
       // json an client schicken
-      res.json(JSON.stringify(question))
+      res.json(question)
 
       console.log('Daten erfolgreich erhalten, User wird wieder ausgeloggt...'.yellow)
       // Ausloggen Body bereit machen
