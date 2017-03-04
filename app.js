@@ -43,4 +43,6 @@ app.use(function (err, req, res, next) {
   res.render('error')
 })
 
+app.set('json spaces', 2)
+
 module.exports = app
