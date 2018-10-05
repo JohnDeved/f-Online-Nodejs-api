@@ -52,7 +52,7 @@ class FOnline {
     this.LoginBody = class {
       constructor () {
         // Post URL
-        this.url = 'http://78.47.249.57/json/login'
+        this.url = 'https://www.f-online.at/json/login'
         // Login Daten als Body
         this.body = JSON.stringify({
           'username': config.username,
@@ -71,7 +71,7 @@ class FOnline {
     this.LogoutBody = class {
       constructor () {
         // Get URL
-        this.url = 'http://78.47.249.57/json/logout'
+        this.url = 'https://www.f-online.at/json/logout'
         // Cookie mit SessionId wird benötigt
         this.headers = {
           'User-Agent': 'F-Online non-scraping Nodejs Api',
@@ -84,7 +84,7 @@ class FOnline {
     this.GetQuestionBody = class {
       constructor () {
         // Post URL
-        this.url = 'http://78.47.249.57/json/questions'
+        this.url = 'https://www.f-online.at/json/questions'
         // Fragen Ids als Stringarray im Body
         this.body = JSON.stringify(['1'])
         // Cookie mit SessionId wird benötigt
