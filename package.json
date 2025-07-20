@@ -11,9 +11,9 @@
     "debug": "~2.6.0",
     "ejs": "~2.5.5",
     "express": "~4.16.0",
-    "morgan": "~1.9.0",
+    "morgan": "~1.10.1",
     "serve-favicon": "~2.4.5",
-    "request": "*",
+    "request": "2.88.2",
     "colors": "*"
   },
   "standard": {
